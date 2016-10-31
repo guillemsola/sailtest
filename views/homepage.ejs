@@ -4,3 +4,7 @@
 <li><%= releases[i].name%></li>
 <% } %>
 </ul>
+<%- img_tag('maid.jpg') %>
+<%- form_tag('/myaction',{multipart: true}) %>
+<%- input_field_tag('ReleaseName', 5) %>
+<p>form_tag_end() is not wortking as it should https://github.com/mhayashi/express-helpers/search?utf8=%E2%9C%93&q=form_tag_end</p>
